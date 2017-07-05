@@ -1,4 +1,4 @@
-<div class="container-full navbar" fxFlexFill>
+<!--<div class="container-full navbar" fxFlexFill>
     <div class="container" fxLayout='row'>
         <div fxFlex>
           <button type="button" md-button (click)="sidenav.toggle()">Open</button>
@@ -7,8 +7,42 @@
             <button md-button>Click me!</button>
         </div>
     </div>
-</div>
+</div>-->
+
+<md-toolbar color="primary">
+
+  <button md-button >
+    <md-icon>home</md-icon> 
+        {{title}}</button>
+
+  <button md-button (click)="sidenav.toggle()"><md-icon>menu</md-icon></button>
+  <!-- This fills the remaining space of the current row -->
+  <span class="fill-remaining-space"></span>
+  <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+    <button md-button routerLink="/products">Products</button>
+    <button md-button routerLink="/dashboard">Dashboard</button>
+  </div>
+  <button md-button [md-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
+     <md-icon>menu</md-icon>
+    </button>
+
+</md-toolbar>
+<md-menu x-position="before" #menu="mdMenu">
+  <button md-menu-item routerLink="/products">Products</button>
+  <button md-menu-item routerLink="/dashboard">Dashboard</button>
+</md-menu>
+
 <md-sidenav-container class="sidenav">
+  <md-sidenav #sidenav mode="over" class="sidenav-content">
+    <md-nav-list>
+      <a md-list-item href="page1.html">Page 1</a>
+      <a md-list-item href="page2.html">Page 2</a>
+      <a md-list-item href="page3.html">Page 3</a>
+    </md-nav-list>
+  </md-sidenav>
+</md-sidenav-container>
+
+<!--<md-sidenav-container class="sidenav">
   <md-sidenav #sidenav mode="side" opened="true" class="sidenav-content">
     <md-nav-list class="sidenav-list">
       <a md-list-item href="..." > Example</a>
@@ -18,4 +52,4 @@
     </md-nav-list>
   </md-sidenav>
   
-</md-sidenav-container>
+</md-sidenav-container>-->
