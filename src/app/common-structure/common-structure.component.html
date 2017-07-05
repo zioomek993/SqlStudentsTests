@@ -1,0 +1,21 @@
+<div class="container-full navbar" fxFlexFill>
+    <div class="container" fxLayout='row'>
+        <div fxFlex>
+          <button type="button" md-button (click)="sidenav.toggle()">Open</button>
+        </div>
+        <div fxFlex fxLayout='row' fxLayoutAlign="end center">
+            <button md-button>Click me!</button>
+        </div>
+    </div>
+</div>
+<md-sidenav-container class="sidenav">
+  <md-sidenav #sidenav mode="side" opened="true" class="sidenav-content">
+    <md-nav-list class="sidenav-list">
+      <a md-list-item href="..." > Example</a>
+      <a md-list-item href="..." > Example</a>
+      <a md-list-item href="..." > Example</a>
+      <a md-list-item href="..." > Example</a>
+    </md-nav-list>
+  </md-sidenav>
+  
+</md-sidenav-container>
