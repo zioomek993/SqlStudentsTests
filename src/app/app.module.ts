@@ -6,6 +6,7 @@ import {MaterialModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MdButtonModule, MdSidenavModule} from '@angular/material';
 import 'hammerjs';
+import { AppRoutingModule } from './app-routing.module';
 
 
 
