@@ -13,9 +13,10 @@ const appRouters: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forRoot(appRouters,{enableTracing:true})
+    RouterModule.forChild(appRouters)
   ],
-  exports: [ RouterModule],
+  exports: [RouterModule],
   declarations: []
 })
 export class AuthorizationRoutingModule { }
+  

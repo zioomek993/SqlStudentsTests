@@ -5,7 +5,7 @@ export class AppConectionService {
 
   constructor() { }
 
-   UserIsLogged():boolean{
+  UserIsLogged(): boolean {
     return true;
   }
 }

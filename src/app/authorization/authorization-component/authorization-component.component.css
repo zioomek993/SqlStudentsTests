@@ -1,0 +1,12 @@
+.authContainter{
+    width: 33%;
+    margin: 15% auto;
+}
+
+.authInputElement{
+    display: block;
+    width: 75%;
+}
+.authBox{
+    /*width: 30%;*/
+}
