@@ -3,9 +3,14 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import {AuthService} from './auth.service';
+import {CommonStructureComponent} from './common-structure/common-structure.component';
+import {AppConectionService} from './app-conection.service';
 
-const appRouting: Routes =[
-  {path:'', component:AppComponent}
+
+const appRouting: Routes = [
+  {path: '', component: CommonStructureComponent, canActivate: [AuthService] },
+  {path: '**', redirectTo: '/login', pathMatch: 'full'}
 ]
 
 @NgModule({
@@ -14,6 +19,7 @@ const appRouting: Routes =[
     RouterModule.forRoot(appRouting)
   ],
   declarations: [],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [AuthService, AppConectionService]
 })
 export class AppRoutingModule { }

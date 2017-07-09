@@ -6,6 +6,6 @@ export class AppConectionService {
   constructor() { }
 
   UserIsLogged(): boolean {
-      return false;
+      return true;
   }
 }

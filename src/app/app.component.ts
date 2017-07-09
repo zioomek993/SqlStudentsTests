@@ -8,16 +8,16 @@ import { AppConectionService } from './app-conection.service';
     styleUrls: ['./app.component.scss'],
   providers: [AppConectionService]
 })
-export class AppComponent implements OnInit{
-  title = 'app';
+export class AppComponent implements OnInit {
+   title = 'app';
 
-  public userisLogged:boolean =false;
+  public userisLogged = false;
 
-  constructor(private appConectionService:AppConectionService){
+  constructor(private appConectionService: AppConectionService) {
 
   }
 
-  ngOnInit(){
+  ngOnInit() {
 
      this.userisLogged = this.appConectionService.UserIsLogged();
   }
