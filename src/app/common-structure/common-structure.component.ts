@@ -6,7 +6,7 @@ import { AppConectionService } from '../app-conection.service';
 @Component({
   selector: 'app-common-structure',
   templateUrl: './common-structure.component.html',
-  styleUrls: ['./common-structure.component.css'],
+    styleUrls: ['./common-structure.component.scss'],
   encapsulation: ViewEncapsulation.None,
   providers: [AppConectionService]
 })

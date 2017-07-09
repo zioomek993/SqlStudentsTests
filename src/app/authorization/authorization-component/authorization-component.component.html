@@ -1,16 +1,24 @@
-<div class="authContainter">
-  <md-card fxLayout="column" class="authBox">
-    <md-card-header fxFlex >
-      <md-card-title>SomeThing</md-card-title>
-    </md-card-header>
-    <md-card-content fxFlex fxLayout="column">
-      <md-input-container fxFlex class="authInputElement">
-        <input mdInput placeholder="Favorite food" value="Sushi">
-      </md-input-container>
-      <md-input-container fxFlex class="authInputElement">
-        <input mdInput placeholder="Favorite food" value="Sushi">
-      </md-input-container>
+<div class="authContainter" color="primary" fxFlex.gt-xs="33">
+  <md-card class="authBox">
+    <form class="authForm" fxLayout="column">
+      <md-card-header>
+        <md-card-title fxFlexAlign="center center">
+          <h1>Logowanie</h1>
+        </md-card-title>
+      </md-card-header>
+      <md-card-content fxLayout="column">
+        <md-input-container fxFlex class="authInputElement">
+          <input mdInput placeholder="Login">
+        </md-input-container>
+        <md-input-container fxFlex class="authInputElement">
+          <input mdInput placeholder="Hasło">
+        </md-input-container>
 
-    </md-card-content>
+      </md-card-content>
+      <md-card-actions fxFlex fxFlexAlign="center">
+        <button type="submit" md-raised-button>Loguj</button>
+      </md-card-actions>
+      <md-card-footer fxFlex></md-card-footer>
+    </form>
   </md-card>
-</div>
+</div>  
