@@ -6,10 +6,10 @@ import {AppConectionService} from './app-conection.service';
 @Injectable()
 export class AuthService implements CanActivate {
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean | Observable<boolean> | Promise<boolean> {
-    if (route.url[0] && route.url[0].path === 'login' && this.appConnection.UserIsLogged()){
+    if (route.url[0] && route.url[0].path === 'login' && this.appConnection.UserIsLogged()) {
       this.router.navigate(['']);
       return false ;
-    }else if(route.url[0] && route.url[0].path === 'login' && !this.appConnection.UserIsLogged()) {
+    }else if (route.url[0] && route.url[0].path === 'login' && !this.appConnection.UserIsLogged()) {
       return true;
     } else if (!this.appConnection.UserIsLogged()){
       this.router.navigate(['/login']);

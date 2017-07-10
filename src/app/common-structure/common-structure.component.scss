@@ -9,14 +9,14 @@ body{
 
     }
     .sidenav {
-        width: 100%;
+        width: 15%;
         padding: 0;
         margin-top: 64px;
         .sidenav-content {
             height: 100%;
-            align-items: center; 
+            align-items: center;
             justify-content: center;
-            width: 15%;
+            width: 100%;
             min-width: 160px!important;
             // /*border-right: 1px solid grey;*/
             box-shadow: 0 0 3px grey;
@@ -24,7 +24,7 @@ body{
         .sidenav-list a{
             text-align: center;
         }
-        
+
     }
 
 }

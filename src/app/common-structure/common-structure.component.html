@@ -20,7 +20,7 @@
   <button md-menu-item routerLink="/dashboard">Dashboard</button>
 </md-menu>
 
-<md-sidenav-container class="sidenav" fxLayout="column" fullscreen  >
+<md-sidenav-container class="sidenav" fxShow.sm="false" fxShow.xs="false" fxLayout="column" fullscreen  >
   <md-sidenav #sidenav mode="{{navMode}}" opened="true" class="sidenav-content">
       <md-nav-list class="sidenav-list">
       <a md-list-item routerLink='/login'>Page 1</a>

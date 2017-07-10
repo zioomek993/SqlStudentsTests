@@ -9,7 +9,7 @@ import {AppConectionService} from './app-conection.service';
 
 
 const appRouting: Routes = [
-  {path: '', component: CommonStructureComponent, canActivate: [AuthService] },
+  {path: '', redirectTo: '/home', pathMatch: 'full', canActivate: [AuthService] },
   {path: '**', redirectTo: '/login', pathMatch: 'full'}
 ]
 
